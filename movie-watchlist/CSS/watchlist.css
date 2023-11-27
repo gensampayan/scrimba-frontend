@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* text color */
+.hero-title, .cinema-link {
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 64px;
+    font-weight: 900;
+    margin-top: 1.5em;
+}
+
+.cinema-link {
+    font-size: 32px;
+    font-weight: 700;
+    list-style: none;
+    margin-top: 0.5em;
+}
+
+/* header */
+#header {
+    width: 100vw;
+    height: 50vh;
+    background: url('/images/hero.png') no-repeat 40% 20% / cover;
+    filter: grayscale(100%);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/*Default display if no watchlist added*/
+.add-watchlist {
+    color: #000;
+    text-decoration: none;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+}
+
+.add-btn {
+    width: 60px;
+    height: 60px;
+}
+
+.empty {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* main section */
+#watchlist-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-list {
+    display: flex;
+    margin: 50px 0 0 30%;
+}
+
+#movie-details {
+    margin: 10px 0 20px 20px;
+}
+
+#movie-description {
+    width: 50%;
+}
+
+#movie-img {
+    width: 198px;
+    height: 294px;
+}
+
+#movie-name, #other-details {
+    margin: 0 0 20px 0;
+}
+
+.remove-to-watchlist, .remove-plus {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

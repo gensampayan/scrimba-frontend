@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* text color */
+.hero-title, .watchlist-link {
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 64px;
+    font-weight: 900;
+    margin-top: 1.5em;
+}
+
+.watchlist-link {
+    font-size: 32px;
+    font-weight: 700;
+    list-style: none;
+    margin-top: 0.5em;
+}
+
+/* header */
+#header {
+    width: 100vw;
+    height: 50vh;
+    background: url('/images/hero.png') no-repeat 40% 20% / cover;
+    filter: grayscale(100%);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+#search-input {
+    width: 35%;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px 0px 0px 6px;
+    border: 1px solid #D1D5DB;
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+}
+
+#submit-btn {
+    width: 10%;
+    height: 50px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 0px 6px 6px 0px;
+    border: 1px solid #D1D5DB;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+#submit-btn:hover {
+    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+}
+
+/* main section */
+#main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.main-icon {
+    position: absolute;
+    top: 150px;
+    bottom: 0;
+    left: 450px;
+    width: 60px;
+    height: 60px;
+}
+
+.empty, .message {
+    position: absolute;
+    top: 170px;
+    bottom: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* render movies */
+#movie-list {
+    display: flex;
+    width: 50%;
+    margin: 50px 0 1px 0;
+}
+
+#movie-img {
+    width: 198px;
+    height: 294px;
+}
+
+#movie-details{
+    display: grid;
+    margin-left: 30px;
+}
+
+.circle-plus {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+span.add-to-watchlist, img.circle-plus {
+    cursor: pointer;
+}
