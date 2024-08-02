@@ -1,0 +1,90 @@
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+/* controller */
+#controller {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+#color-selector {
+    width: 30%;
+    height: 6vh;
+    border: 2px solid #313131;
+}
+
+#mode-selector {
+    width: 20%;
+    height: 6vh;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid#D1D5DB;
+    background: #FFFFFF;
+    border: 2px solid #313131;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+#generate-btn {
+    width: 30%;
+    height: 6vh;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid#D1D5DB;
+    background: #FFFFFF;
+    border: 2px solid #313131;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+#generate-btn:hover, #mode-selector:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* generated scheme */
+#palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 1rem; 
+    justify-items: center; 
+}
+
+.color-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    text-align: center; 
+}
+  
+.color-image {
+    width: 85%;
+    height: 80vh;
+}
+  
+.color-hex {
+    width: 20vw;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.copy-button {
+    background-color: #FFFFFF;
+    padding: 5px 80px;
+    cursor: pointer;
+}
+
+.copy-button:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 5px 80px;
+    cursor: pointer;
+}
