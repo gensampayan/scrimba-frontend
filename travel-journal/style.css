@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    height: 100vh;
+    margin: auto;
+}
+
+/* navbar component */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #F55A5A;
+}
+
+.project {
+    color: #FFF;
+    font-size: 14.461px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.085px;
+    margin-left: 10px;
+}
+
+/* card component */
+
+.card-container {
+    display: flex;
+    margin: 50px;
+}
+
+.location-img {
+    object-fit: cover;
+    width: 125px;
+    height: 168px;
+    border-radius: 5px
+}
+
+.details-wrapper {
+    margin: 0 20px;
+    padding: 5px;
+}
+
+.pin-icon {
+    width: 7px;
+    height: 9px;
+}
+
+.location {
+    text-transform: uppercase;
+}
+
+.location, .link {
+    margin-left: 5px;
+}
+
+.location, .link, .date, .description {
+    font-size: 10px;
+}
+
+.location, .link, .date {
+    line-height: 4;
+}
+
+.link {
+    color: #918E9B;
+    line-height: normal;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.date {
+    font-weight: 900;
+}
